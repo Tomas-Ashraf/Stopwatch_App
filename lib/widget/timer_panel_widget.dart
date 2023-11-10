@@ -24,7 +24,7 @@ class _TimerPanelWidgetState extends State<TimerPanelWidget> {
   void initState() {
     super.initState();
 
-    // startTimer();
+    
     reset();
   }
 
@@ -54,9 +54,7 @@ class _TimerPanelWidgetState extends State<TimerPanelWidget> {
   }
 
   startTimer({bool resets = true}) {
-    // if (resets) {
-    //   reset();
-    // }
+ 
     timer = Timer.periodic(
         const Duration(
           seconds: 1,
@@ -84,8 +82,7 @@ class _TimerPanelWidgetState extends State<TimerPanelWidget> {
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
+      
         children: [
           const SizedBox(
             height: 60,
